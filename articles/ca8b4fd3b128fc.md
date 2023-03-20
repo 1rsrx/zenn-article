@@ -36,6 +36,9 @@ extension UIDevice {
 let zxcapture = ZXCapture()
 
 let deviceName = UIDevice.current.modelName
+
+// iPhone14Pro, 14ProMaxのみズームさせる
+// https://newichiros-memo.blogspot.com/2019/12/iphone-devicename.html
 if deviceName == "iPhone15,2" || deviceName == "iPhone15,3" {
     do {
         try zxcapture.captureDevice.lockForConfiguration()
