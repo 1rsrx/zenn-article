@@ -19,10 +19,24 @@ publication_name: "karabiner_inc"
 
 # ZXingObjCの例
 ```swift
+extension UIDevice {
+    var modelName: String {
+        var systemInfo = utsname()
+        uname(&systemInfo)
+        let machine = withUnsafePointer(to: &systemInfo.machine) {
+            $0.withMemoryRebound(to: CChar.self, capacity: 1) {
+                ptr in String.init(validatingUTF8: ptr)
+            }
+        }
+        return machine ?? "Unknown"
+    }
+}
+
+
 let zxcapture = ZXCapture()
 
-let deviceName = UIDevice.current.name
-if deviceName == "14 Pro" || deviceName == "14 Pro Max" {
+let deviceName = UIDevice.current.modelName
+if deviceName == "iPhone15,2" || deviceName == "iPhone15,3" {
     do {
         try zxcapture.captureDevice.lockForConfiguration()
         zxcapture.captureDevice.videoZoomFactor = 2.5 // 2.5倍にズーム
