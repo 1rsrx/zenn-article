@@ -1,6 +1,6 @@
 ---
 title: "iPhone14Proでカメラのピントが合わない時の対処法"
-emoji: "😸"
+emoji: "🐾"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["swift"]
 published: true
