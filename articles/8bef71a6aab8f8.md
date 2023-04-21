@@ -1,6 +1,6 @@
 ---
 title: "ConnectへのアップロードでThis bundle does not support one or more of the...が発生"
-emoji: "🐕"
+emoji: "🐾"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["swift"]
 published: true

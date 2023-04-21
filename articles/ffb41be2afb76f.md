@@ -1,6 +1,6 @@
 ---
 title: "Realmを使ったユニットテストを書いてみた"
-emoji: "🦁"
+emoji: "🐾"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["swift", "ios"]
 published: true
