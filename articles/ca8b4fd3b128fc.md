@@ -4,7 +4,6 @@ emoji: "🐾"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["swift"]
 published: true
-publication_name: "karabiner_inc"
 ---
 
 # 原因
